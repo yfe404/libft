@@ -62,7 +62,7 @@ make test
 - [ ] ft_strncmp
 - [X] ft_atoi
 - [X] ft_isalpha
-- [ ] ft_isdigit
+- [X] ft_isdigit
 - [ ] ft_isalnum
 - [ ] ft_isascii
 - [ ] ft_isprint
