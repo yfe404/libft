@@ -6,11 +6,11 @@
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/09 13:41:10 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/09 13:53:09 by yfeunteu         ###   ########.fr       */
+/*   Updated: 2025/03/09 15:10:19 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	return (\
 	c == '\f' || \
