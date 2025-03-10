@@ -63,7 +63,7 @@ make test
 - [X] ft_atoi
 - [X] ft_isalpha
 - [X] ft_isdigit
-- [ ] ft_isalnum
+- [X] ft_isalnum
 - [X] ft_isascii
 - [ ] ft_isprint
 - [ ] ft_toupper

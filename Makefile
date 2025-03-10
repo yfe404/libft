@@ -13,7 +13,7 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
 # Rule to compile each test
-$(BUILD_DIR)/%: $(TEST_DIR)/%_test.c $(SRC_DIR)/%.c | $(BUILD_DIR)
+$(BUILD_DIR)/%: $(TEST_DIR)/%_test.c $(SRC_DIR)/*.c | $(BUILD_DIR)
 	$(CC) $(CFLAGS) $^ -o $@
 
 # Run all tests
