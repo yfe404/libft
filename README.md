@@ -47,7 +47,7 @@ make test
 - [ ] ft_memmove
 - [ ] ft_memchr
 - [ ] ft_memcmp
-- [ ] ft_strlen
+- [X] ft_strlen
 - [ ] ft_strdup
 - [ ] ft_strcpy
 - [ ] ft_strncpy
