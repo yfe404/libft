@@ -40,7 +40,7 @@ make test
 
 ### Part 1: Libc Functions
 
-- [ ] ft_memset
+- [X] ft_memset
 - [X] ft_bzero
 - [ ] ft_memcpy
 - [ ] ft_memccpy
