@@ -66,8 +66,8 @@ make test
 - [X] ft_isalnum
 - [X] ft_isascii
 - [X] ft_isprint
-- [ ] ft_toupper
-- [ ] ft_tolower
+- [X] ft_toupper
+- [X] ft_tolower
 
 ### Part 2: Additional Functions
 
