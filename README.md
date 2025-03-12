@@ -43,7 +43,7 @@ make test
 - [X] ft_memset
 - [X] ft_bzero
 - [X] ft_memcpy
-- [ ] ft_memccpy
+- [X] ft_memccpy
 - [ ] ft_memmove
 - [ ] ft_memchr
 - [ ] ft_memcmp
