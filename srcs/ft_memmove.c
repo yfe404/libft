@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/15 11:44:55 by yfeunteu          #+#    #+#             */
+/*   Updated: 2025/03/15 11:45:06 by yfeunteu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -12,7 +24,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		while (n--)
 			*_dest-- = *_src--;
 	}
-	else 
+	else
 	{
 		_src = src;
 		_dest = dest;
