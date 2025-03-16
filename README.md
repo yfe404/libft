@@ -50,7 +50,7 @@ make test
 - [X] ft_strlen
 - [X] ft_strdup
 - [X] ft_strcpy
-- [ ] ft_strncpy
+- [X] ft_strncpy
 - [ ] ft_strcat
 - [ ] ft_strncat
 - [ ] ft_strlcat
