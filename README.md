@@ -58,8 +58,8 @@ make test
 - [ ] ft_strrchr
 - [ ] ft_strstr
 - [ ] ft_strnstr
-- [ ] ft_strcmp
-- [ ] ft_strncmp
+- [X] ft_strcmp
+- [X] ft_strncmp
 - [X] ft_atoi
 - [X] ft_isalpha
 - [X] ft_isdigit
