@@ -73,7 +73,7 @@ make test
 
 - [X] ft_memalloc
 - [X] ft_memdel
-- [ ] ft_strnew
+- [X] ft_strnew
 - [ ] ft_strdel
 - [ ] ft_strclr
 - [ ] ft_striter
