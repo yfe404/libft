@@ -72,7 +72,7 @@ make test
 ### Part 2: Additional Functions
 
 - [X] ft_memalloc
-- [ ] ft_memdel
+- [X] ft_memdel
 - [ ] ft_strnew
 - [ ] ft_strdel
 - [ ] ft_strclr
