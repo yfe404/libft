@@ -79,7 +79,7 @@ make test
 - [X] ft_striter
 - [X] ft_striteri
 - [X] ft_strmap
-- [ ] ft_strmapi
+- [X] ft_strmapi
 - [ ] ft_strequ
 - [ ] ft_strnequ
 - [ ] ft_strsub
