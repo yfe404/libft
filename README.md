@@ -91,8 +91,8 @@ make test
 - [X] ft_putstr
 - [X] ft_putendl
 - [ ] ft_putnbr
-- [ ] ft_putchar_fd
-- [ ] ft_putstr_fd
+- [X] ft_putchar_fd
+- [X] ft_putstr_fd
 - [ ] ft_putendl_fd
 - [ ] ft_putnbr_fd
 
