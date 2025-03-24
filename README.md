@@ -93,7 +93,7 @@ make test
 - [ ] ft_putnbr
 - [X] ft_putchar_fd
 - [X] ft_putstr_fd
-- [ ] ft_putendl_fd
+- [X] ft_putendl_fd
 - [ ] ft_putnbr_fd
 
 ### Bonus: Linked List Functions
