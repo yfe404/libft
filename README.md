@@ -82,7 +82,7 @@ make test
 - [X] ft_strmapi
 - [X] ft_strequ
 - [X] ft_strnequ
-- [ ] ft_strsub
+- [X] ft_strsub
 - [ ] ft_strjoin
 - [ ] ft_strtrim
 - [ ] ft_strsplit
