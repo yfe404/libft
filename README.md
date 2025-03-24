@@ -80,7 +80,7 @@ make test
 - [X] ft_striteri
 - [X] ft_strmap
 - [X] ft_strmapi
-- [ ] ft_strequ
+- [X] ft_strequ
 - [ ] ft_strnequ
 - [ ] ft_strsub
 - [ ] ft_strjoin
