@@ -86,7 +86,7 @@ make test
 - [X] ft_strjoin
 - [X] ft_strtrim
 - [ ] ft_strsplit
-- [ ] ft_itoa
+- [X] ft_itoa
 - [ ] ft_putchar
 - [ ] ft_putstr
 - [ ] ft_putendl
