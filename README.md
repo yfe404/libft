@@ -78,7 +78,7 @@ make test
 - [X] ft_strclr
 - [X] ft_striter
 - [X] ft_striteri
-- [ ] ft_strmap
+- [X] ft_strmap
 - [ ] ft_strmapi
 - [ ] ft_strequ
 - [ ] ft_strnequ
