@@ -90,11 +90,11 @@ make test
 - [X] ft_putchar
 - [X] ft_putstr
 - [X] ft_putendl
-- [ ] ft_putnbr
+- [X] ft_putnbr
 - [X] ft_putchar_fd
 - [X] ft_putstr_fd
 - [X] ft_putendl_fd
-- [ ] ft_putnbr_fd
+- [X] ft_putnbr_fd
 
 ### Bonus: Linked List Functions
 
