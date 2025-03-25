@@ -102,7 +102,7 @@ make test
 - [X] ft_lstdelone
 - [X] ft_lstdel
 - [X] ft_lstadd
-- [ ] ft_lstiter
+- [X] ft_lstiter
 - [ ] ft_lstmap
 
 ## Usage
