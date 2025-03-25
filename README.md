@@ -57,7 +57,7 @@ make test
 - [X] ft_strchr
 - [X] ft_strrchr
 - [X] ft_strstr
-- [ ] ft_strnstr
+- [X] ft_strnstr
 - [X] ft_strcmp
 - [X] ft_strncmp
 - [X] ft_atoi
