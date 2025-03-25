@@ -100,7 +100,7 @@ make test
 
 - [X] ft_lstnew
 - [X] ft_lstdelone
-- [ ] ft_lstdel
+- [X] ft_lstdel
 - [ ] ft_lstadd
 - [ ] ft_lstiter
 - [ ] ft_lstmap
