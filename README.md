@@ -54,7 +54,7 @@ make test
 - [X] ft_strcat
 - [X] ft_strncat
 - [ ] ft_strlcat
-- [ ] ft_strchr
+- [X] ft_strchr
 - [ ] ft_strrchr
 - [ ] ft_strstr
 - [ ] ft_strnstr
