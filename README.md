@@ -101,7 +101,7 @@ make test
 - [X] ft_lstnew
 - [X] ft_lstdelone
 - [X] ft_lstdel
-- [ ] ft_lstadd
+- [X] ft_lstadd
 - [ ] ft_lstiter
 - [ ] ft_lstmap
 
