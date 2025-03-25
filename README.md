@@ -99,7 +99,7 @@ make test
 ### Bonus: Linked List Functions
 
 - [X] ft_lstnew
-- [ ] ft_lstdelone
+- [X] ft_lstdelone
 - [ ] ft_lstdel
 - [ ] ft_lstadd
 - [ ] ft_lstiter
