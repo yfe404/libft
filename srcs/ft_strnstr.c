@@ -6,7 +6,7 @@
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 14:05:59 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/25 14:06:01 by yfeunteu         ###   ########.fr       */
+/*   Updated: 2025/03/26 13:06:06 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	{
 		if (ft_strnequ(ret, needle, needle_len))
 			return (ret);
+		ret = ft_strchr(ret + 1, needle[0]);
 	}
 	return (NULL);
 }
