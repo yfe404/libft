@@ -11,7 +11,7 @@ int main() {
     	assert(ft_isascii(i++) == 0);
 	while(i <= 127)
 	{
-    	assert(ft_isascii(i) == i);
+    	assert(ft_isascii(i) != 0);
 		i++;
 	}
 	while(i < 420)
