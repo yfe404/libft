@@ -27,6 +27,9 @@ void test_ft_strchr() {
     // Test 6: Empty string
     assert(ft_strchr("", 'a') == strchr("", 'a'));
 
+    // Test 7: char bigger than 127
+    assert(ft_strchr("tripod", 't' + 256) == strchr("tripod", 't' + 256));
+
     // Test 7: NULL input (should not be tested directly, as it leads to undefined behavior)
     // assert(ft_strchr(NULL, 'a') == strchr(NULL, 'a')); // Undefined behavior
 
