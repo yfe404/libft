@@ -5,21 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/25 19:01:21 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/25 19:01:23 by yfeunteu         ###   ########.fr       */
+/*   Created: 2025/03/27 16:34:41 by yfeunteu          #+#    #+#             */
+/*   Updated: 2025/03/27 16:34:41 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (!f)
-		return ;
-	while (lst)
+	while (f && lst)
 	{
-		f(lst);
+		f(lst->content);
 		lst = lst->next;
 	}
 }
