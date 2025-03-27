@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/24 20:14:57 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/24 20:47:21 by yfeunteu         ###   ########.fr       */
+/*   Created: 2025/03/26 19:57:45 by yfeunteu          #+#    #+#             */
+/*   Updated: 2025/03/26 22:25:09 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
 size_t	ft_strlen(const char *s);
-char	*ft_strnew(size_t size);
-char	*ft_strncpy(char *dst, const char *src, size_t dsize);
 
 static size_t	ft_strnlen(const char	*s, size_t n)
 {
@@ -26,17 +24,27 @@ static size_t	ft_strnlen(const char	*s, size_t n)
 	return (len);
 }
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	int		s_len;
+	size_t	s_len;
+	size_t	pos;
 
-	s_len = ft_strnlen(s, len);
+	if (!s)
+		return (NULL);
+	pos = 0;
 	if (start > ft_strlen(s))
+		s_len = 0;
+	else
+		s_len = ft_strnlen((s + start), len);
+	substr = (char *)malloc(s_len + 1);
+	if (!substr)
 		return (NULL);
-	substr = ft_strnew(len + 1);
-	if (!(substr && s))
-		return (NULL);
-	substr = ft_strncpy(substr, s + start, s_len);
+	substr[s_len] = '\0';
+	while (s_len--)
+	{
+		substr[pos] = s[start + pos];
+		pos++;
+	}
 	return (substr);
 }
