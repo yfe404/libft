@@ -6,7 +6,7 @@
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 21:18:16 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/24 21:25:07 by yfeunteu         ###   ########.fr       */
+/*   Updated: 2025/03/26 16:07:22 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,15 @@
 size_t	ft_strlen(const char *s);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 
-static char	ft_iswhitespace(char c)
+static char	ft_iswhitespace(char c, const char *set)
 {
-	return (c == ' ' || c == '\n' || c == '\t');
+	while (set && *set)
+		if (*set++ == c)
+			return (1);
+	return (0);
 }
 
-char	*ft_strtrim(char const *s)
+char	*ft_strtrim(char const *s, const char *set)
 {
 	size_t	pos_start;
 	size_t	pos_end;
@@ -32,11 +35,11 @@ char	*ft_strtrim(char const *s)
 	len = ft_strlen(s);
 	if (!s)
 		return (NULL);
-	while (s[pos] && ft_iswhitespace(s[pos]))
+	while (s[pos] && ft_iswhitespace(s[pos], set))
 		pos++;
 	pos_start = pos;
 	pos = ft_strlen(s) - 1;
-	while (pos > 0 && pos != pos_start && ft_iswhitespace(s[pos]))
+	while (pos > 0 && pos != pos_start && ft_iswhitespace(s[pos], set))
 		pos--;
 	pos_end = pos;
 	len = pos_end - pos_start + 1;
