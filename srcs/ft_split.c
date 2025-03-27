@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/25 12:54:55 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/25 12:54:55 by yfeunteu         ###   ########.fr       */
+/*   Created: 2025/03/26 22:29:01 by yfeunteu          #+#    #+#             */
+/*   Updated: 2025/03/26 22:29:02 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 static size_t	ft_count_splits(char const *s, char c)
 {
@@ -33,7 +33,7 @@ static size_t	ft_count_splits(char const *s, char c)
 	return (count);
 }
 
-static int	ft_find_next_sep(char const *s, char sep)
+static int	find_sep(char const *s, char sep)
 {
 	int	pos;
 
@@ -61,11 +61,11 @@ static size_t	ft_substrlen(char const *s, char c)
 	return (len);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t	count;
 	size_t	n_splits;
-	size_t	idx_begin;
+	size_t	istart;
 	size_t	substr_len;
 	char	**res;
 
@@ -73,15 +73,15 @@ char	**ft_strsplit(char const *s, char c)
 		return (NULL);
 	n_splits = ft_count_splits(s, c);
 	count = 0;
-	idx_begin = 0;
+	istart = 0;
 	res = (char **)malloc((n_splits + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
 	while (count < n_splits)
 	{
-		idx_begin += ft_find_next_sep(s + idx_begin, c) + 1;
-		substr_len = ft_substrlen(s + idx_begin, c);
-		res[count] = ft_strsub(s, idx_begin, substr_len);
+		istart += (istart != 0 || s[0] == c) * (find_sep(s + istart, c) + 1);
+		substr_len = ft_substrlen(s + istart, c);
+		res[count] = ft_substr(s, istart, substr_len);
 		if (!res[count])
 			return (NULL);
 		count++;
