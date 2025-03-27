@@ -5,21 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/25 18:09:34 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/25 18:09:38 by yfeunteu         ###   ########.fr       */
+/*   Created: 2025/03/27 16:18:54 by yfeunteu          #+#    #+#             */
+/*   Updated: 2025/03/27 16:23:25 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void	ft_lstdelone(t_list **alst, void (*del)(void*, size_t))
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (alst && *alst)
-	{
-		if (del)
-			del((*alst)->content, (*alst)->content_size);
-		free (*alst);
-		*alst = NULL;
-	}
+	if (del && lst && lst->content)
+		del(lst->content);
+	free(lst);
 }
