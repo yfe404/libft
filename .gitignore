@@ -2,3 +2,6 @@ a.out
 build/
 *.o
 test_output.txt
+libft.a
+main.c
+libftTester/
