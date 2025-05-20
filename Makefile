@@ -2,8 +2,8 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRC_DIR = srcs
-BONUS_DIR = srcs
+SRC_DIR = ./
+BONUS_DIR = ./
 OBJ_DIR = objs
 
 SRC = ft_isalpha \
