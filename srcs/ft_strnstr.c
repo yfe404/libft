@@ -6,7 +6,7 @@
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 14:05:59 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/27 23:15:42 by yfeunteu         ###   ########.fr       */
+/*   Updated: 2025/05/20 12:49:50 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *s);
-int		ft_strnequ(char const *s1, char const *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+
+int	ft_strnequ(char const *s1, char const *s2, size_t n)
+{
+	return (!ft_strncmp(s1, s2, n));
+}
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
