@@ -6,14 +6,24 @@
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 19:06:04 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/25 19:06:10 by yfeunteu         ###   ########.fr       */
+/*   Updated: 2025/05/20 15:01:41 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
 size_t	ft_strlen(const char *s);
-char	*ft_strnew(size_t size);
+void	ft_bzero(void *ptr, size_t size);
+
+static char	*ft_strnew(size_t size)
+{
+	char	*ptr;	
+
+	ptr = (char *)malloc(size);
+	if (ptr != NULL)
+		ft_bzero(ptr, size);
+	return (ptr);
+}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
