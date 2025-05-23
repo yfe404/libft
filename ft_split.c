@@ -6,7 +6,7 @@
 /*   By: yfeunteu <yfeunteu@student.42prague.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 22:29:01 by yfeunteu          #+#    #+#             */
-/*   Updated: 2025/03/26 22:29:02 by yfeunteu         ###   ########.fr       */
+/*   Updated: 2025/05/23 21:02:20 by yfeunteu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,6 @@ char	**ft_split(char const *s, char c)
 	size_t	count;
 	size_t	n_splits;
 	size_t	istart;
-	size_t	substr_len;
 	char	**res;
 
 	if (!s)
@@ -80,11 +79,11 @@ char	**ft_split(char const *s, char c)
 	while (count < n_splits)
 	{
 		istart += (istart != 0 || s[0] == c) * (find_sep(s + istart, c) + 1);
-		substr_len = ft_substrlen(s + istart, c);
-		res[count] = ft_substr(s, istart, substr_len);
+		res[count] = ft_substr(s, istart, ft_substrlen(s + istart, c));
 		if (!res[count])
 			return (NULL);
 		count++;
+		istart++;
 	}
 	res[count] = NULL;
 	return (res);
