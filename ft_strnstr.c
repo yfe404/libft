@@ -16,7 +16,7 @@ char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
-int	ft_strnequ(char const *s1, char const *s2, size_t n)
+static int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	return (!ft_strncmp(s1, s2, n));
 }
